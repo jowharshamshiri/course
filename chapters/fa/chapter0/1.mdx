@@ -25,17 +25,21 @@
 مرحله اول نصب کتابخانه‌هایی است که در این دوره استفاده می‌کنیم. برای نصب کتابخانه‌ها از pip استفاده می‌کنیم که پکیج‌منیجر پایتون است. در نوت‌بوک‌ها می توانید فرمان‌های سیستمی را با اضافه کردن یک علامت تعجب به ابتدای خط اجرا کنید. برای نصب کتابخانه ترنسفورمرهای هاگینگ‌فیس از این فرمان استفاده کنید:
 
 <div dir="ltr">
-```
-!pip install transformers
-```
+
+  ```
+  !pip install transformers
+  ```
+
 </div>
 
 برای اطمینان از نصب درست این پکیج، آن را ایمپورت کنید:
 
 <div dir="ltr">
-```
-import transformers
-```
+
+  ```
+  import transformers
+  ```
+
 </div>
 
 <div class="flex justify-center">
@@ -45,9 +49,11 @@ import transformers
 این فرمان نسخه بسیار کم حجمی از ترنسفورمرهای هاگینگ‌فیس را نصب می‌کند و فریمورک‌ یادگیری ماشین مشخصی مانند پایتورچ یا تنسورفلو را اضافه نمی کند. با توجه به اینکه ما از بسیاری از قابلیت‌های مختلف این کتابخانه استفاده خواهیم کرد، پیشنهاد می‌کنیم از نسخه پرحجم‌تر مخصوص توسعه نرم‌افزار که به همراه تمامی پکیج‌های وابسته برای تقریبا همه مسائل قابل تصور نصب می‌شود استفاده کنید:
 
 <div dir="ltr">
-```
-!pip install transformers[sentencepiece]
-```
+
+  ```
+  !pip install transformers[sentencepiece]
+  ```
+
 </div>
 
 اجرای این فرمان مقداری به طول می‌انجامد ولی برای طی بقیه دوره نیازی به نصب پکیج دیگری نخواهید داشت!
@@ -58,9 +64,11 @@ import transformers
 اگر پایتون را نصب کردید، می‌توانید فرمان‌های پایتون را در ترمینال اجرا کنید. برای شروع این فرمان را اجرا کنید تا قبل از ادامه از نصب درست پایتون اطمینان حاصل کنید.
 
 <div dir="ltr">
-```
-python --version
-```
+
+  ```
+  python --version
+  ```
+
 </div>
 
 خروجی این فرمان باید شماره نسخه پایتون نصب شده روی سیستم‌تان باشد.
@@ -69,58 +77,71 @@ python --version
 ابتدا پوشه‌ای جدید برای پروژه خود ایجاد کنید. برای مثال پوشه‌ای به نام <b>transformers-course</b> زیر پوشه خانه خودتان در سیستم‌عامل:
 
 <div dir="ltr">
-```
-mkdir ~/transformers-course
-cd ~/transformers-course
-```
+
+  ```
+  mkdir ~/transformers-course
+  cd ~/transformers-course
+  ```
+
 </div>
 
 درون این پوشه، با استفاده از ماژول venv پایتون، محیط مجازی خود را بسازید:
 
 <div dir="ltr">
-```
-python -m venv .env
-```
+
+  ```
+  python -m venv .env
+  ```
+
 </div>
 
 انتظار می‌رود الان زیر پوشه پروژه شما تنها یک پوشه دیگر به نام <b>.env</b> وجود داشته باشد.
 
 <div dir="ltr">
-```
-ls -a
-.      ..    .env
-```
+
+  ```
+  ls -a
+  .      ..    .env
+  ```
+
 </div>
 
 برای ورود و خروج از محیط مجازی پروژه خود از اسکریپت‌های activate و deactivate استفاده کنید:
 
 <div dir="ltr">
-```
-# Activate the virtual environment
-source .env/bin/activate
 
-# Deactivate the virtual environment
-source .env/bin/deactivate
-```
+  ```
+  \# Activate the virtual environment
+  source .env/bin/activate
+
+  \# Deactivate the virtual environment
+  source .env/bin/deactivate
+  ```
+
 </div>
 
 ‌ می‌توانید با استفاده از فرمان which python از فعال شدن محیط مجازی خود اطمینان حاصل کنید:
 
 <div dir="ltr">
-```
-which python
-/home/user/transformers-course/.env/bin/python
-```
+
+  ```
+  which python
+  /home/user/transformers-course/.env/bin/python
+  ```
+
 </div>
 
 نصب وابستگی‌ها
 مانند آنچه در بخش استفاده از گوگل کولَب گفتیم، اکنون نیاز به نصب پکیج‌های موردنیاز برای ادامه دوره را داریم. می‌توانید نسخه پکیج ترنسفورمرهای هاگینگ‌فیس مخصوص توسعه‌ی نرم‌افزار را با استفاده از پکیج‌منیجر pip نصب کنید:
 
 <div dir="ltr">
-```
-pip install "transformers[sentencepiece]"
-```
+
+  ```
+  pip install "transformers[sentencepiece]"
+  ```
+
 </div>
 
 شما تمام مراحل راه‌اندازی را طی کرده و آماده شروع دوره هستید!
+
 </div>
